@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+      <div><img src="img/logoajout.png" class="logoajout"></div>
+              <ul class="menu">
+                  <li><a href="accueil.html">Accueil</a></li>
+                  <li><a href="#Liste">Liste clients</a></li>
+                  <li><a href="ACCUEILajout.html">Ajouter client</a></li>
+                  <li><a href="#Virement">Virement</a></li>
+                  <li><a href="#Assistance">Assistance</a></li>
+              </ul>
+    <h2>SALARIÉ</h2>
+    <form method="POST" action="ajouterclient.php" class="form">
+      <div class="formajout">
+            <label for="prenom">Prenom * :</label><br><input name="prenom" id="prenom" type="text" required="required"/> 
+            <span id="absence_prenom"></span><br>
+            <label for="nom">Nom * :</label><br><input name="nom" id="nom" type="text" required="required"/> 
+            <span id="absence_nom"></span><br>
+            <label for="adresse">Adresse * :</label><br><input name="adresse" id="adresse" type="text"required="required"  />
+            <span id="absence_adresse"></span><br>
+            <label for="email">Email :</label><br><input name="email" id="email" type="email" /><br><br>
+            <label for="tel">Telephone * :</label><br><input name="tel" id="tel" type="tel" required="required"  /> 
+            <span id="absence_tel"></span><br>
+      </div>
+      <div class="formajout2">
+            		<select id="list" name="list" required="required">
+            		     <option>Choisissez un type de compte *</option>
+            		     <option>Compte épargne simple et xeewel</option>
+            		     <option>Compte courant</option>
+            		     <option>Compte bloque</option>
+            		</select >
+                <span id="absence_list"></span>
+                <br>
+                <label for="salaire">Salaire  :</label><br><input name="salaire" id="salaire" type="number" required="required"/> 
+                <span id="absence_salaire"></span>
+                <br>
+                <label for="infos">Infos employeur :</label><br><input name="infos" id="infos" type="text" required="required"/> 
+                <span id="infos"></span>
+                <br>
+                <label for="identification">Identification * :</label><br><input name="identification" id="identification" type="text" required="required" />
+                <span id="identification"></span>
+                <br>
+                <label for="numero">Numero compte* :</label><br><input name="numero" id="numero" type="number" required="required" />
+                <span id="numero"></span> 
+      </div>
+      <div class="col-container1">
+                <div class="col"><input type="submit" value="Valider" id="envoi"></div>
+                <div class="col"><input type="submit" value="Annuler" ></div>
+      </div>
+    </form>
+<script src="script1.js"></script>
+</body>
+</html>
